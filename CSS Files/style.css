@@ -289,13 +289,15 @@ html {
 .landing {
     background-image: url(../Images/landing.jpg);
     background-position: bottom;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 60px);
     position: relative;
+    background-size: cover;
+
 }
 
 .landing .intro-text {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%);
     width: 330px;
