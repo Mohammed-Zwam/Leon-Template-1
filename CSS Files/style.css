@@ -39,7 +39,7 @@ body {
 :root {
     --main-color: #10cab7;
     --second-color: #2c4755;
-    --section-padding: 60px;
+    --section-padding: 50px;
     --background-col: #f6f6f6;
 
 }
@@ -106,7 +106,7 @@ html {
 /******************************** Start Style of Header ********************************/
 
 .header {
-    padding: 20px;
+    padding: 10px;
 }
 
 .header .container {
@@ -120,15 +120,16 @@ html {
     width: 40px;
     height: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
+    align-items: center;
+    
 }
 
 .header .logo span:first-child {
     margin: 0;
-    border-left: 6px solid var(--second-color);
-    height: 100%;
-
+    border-left: 4px solid var(--second-color);
+    height: 92%;
 }
 
 
@@ -137,7 +138,7 @@ html {
     margin: 0;
     width: 30px;
     height: 100%;
-    border: 6px solid var(--main-color);
+    border: 4px solid var(--main-color);
     border-radius: 50%;
     transition: 0.5s;
 
@@ -200,7 +201,6 @@ html {
     100% {
         right: -84px;
     }
-
 }
 
 .header .links {
@@ -289,28 +289,28 @@ html {
 .landing {
     background-image: url(../Images/landing.jpg);
     background-position: bottom;
-    height: calc(100vh - 71px);
+    height: calc(100vh - 49px);
     position: relative;
     background-size: cover;
-
 }
 
 .landing::before {
     content: "";
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: white;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
 }
 
+
 .landing .intro-text {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%);
-    width: 330px;
+    width: 380px;
     max-width: 100%;
 }
 
@@ -328,6 +328,7 @@ html {
     color: black;
     line-height: 2;
     text-align: center;
+    font-size: 18px;
 }
 
 @media (max-width: 400px) {
@@ -336,7 +337,7 @@ html {
     }
 
     .landing .intro-text p {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -375,6 +376,8 @@ html {
     color: #777;
     font-size: 17px;
 }
+
+
 
 /******************************** End Style of Features ********************************/
 /******************************** Start Style of Servecies ********************************/
@@ -488,6 +491,8 @@ html {
     max-width: 100%;
 }
 
+
+
 /******************************** End Style of Portfolio ********************************/
 /******************************** Start Style of About ********************************/
 .about {
@@ -600,7 +605,6 @@ html {
 }
 
 .contact .content {
-    padding: var(--section-padding) 0;
     text-align: center;
 }
 
@@ -633,7 +637,7 @@ html {
 }
 
 .contact .content .social {
-    margin-top: 30px;
+    padding: 15px 0;
 }
 
 .contact .content i {
@@ -677,3 +681,59 @@ html {
 }
 
 /******************************** End Style of Footer ********************************/
+@media (max-width: 370px) {
+    .portfolio {
+        padding: 20px 0;
+    }
+
+    .servecies .servecies-content {
+        grid-gap: 0;
+    }
+
+    .about {
+        padding: 20px 0 0;
+    }
+
+    .servecies {
+        padding: 18px 0;
+    }
+
+    .features {
+        padding: 15px 0;
+    }
+
+    .landing {
+        height: calc(100vh - 38px);
+    }
+
+    .header .logo span:first-child {
+        border-left-width: 3px;
+        height: 80%;
+    }
+
+    .header .logo span:last-child {
+        width: 25px;
+        height: 85%;
+        border: 4px solid var(--main-color);
+    }
+
+    .header .logo {
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .header {
+        padding: 9px 0 0px;
+    }
+    .portfolio .port-content {
+        padding-bottom: 20px;
+    }
+
+    .about-content {
+        padding: 40px 0 20px;
+    }
+    .contact {
+        margin: 0px;
+        padding-top: 20px;
+    }
+}
