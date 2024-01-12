@@ -681,7 +681,7 @@ html {
 }
 
 /******************************** End Style of Footer ********************************/
-@media (max-width: 370px) {
+@media (max-width: 400px) {
     .portfolio {
         padding: 20px 0;
     }
