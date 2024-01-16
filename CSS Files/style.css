@@ -522,9 +522,11 @@ html {
     .about .about-content .image::after {
         display: none;
     }
+
     .about .about-content {
         padding-top: 40px;
     }
+
     .about-content .text {
         width: 100%;
     }
@@ -648,6 +650,7 @@ html {
 }
 
 @media (max-width: 580px) {
+
     .contact .content h3,
     .contact .content a {
         font-size: 26px;
@@ -737,5 +740,9 @@ html {
     .contact {
         margin: 0px;
         padding-top: 20px;
+    }
+
+    .footer {
+        padding: 30px 15px;
     }
 }
