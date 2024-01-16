@@ -522,7 +522,9 @@ html {
     .about .about-content .image::after {
         display: none;
     }
-
+    .about .about-content {
+        padding-top: 40px;
+    }
     .about-content .text {
         width: 100%;
     }
@@ -536,8 +538,6 @@ html {
 .about-content .text {
     flex-basis: 50%;
     line-height: 1.8;
-
-
 }
 
 
@@ -648,12 +648,10 @@ html {
 }
 
 @media (max-width: 580px) {
-
     .contact .content h3,
     .contact .content a {
         font-size: 26px;
     }
-
 }
 
 @media (max-width: 360px) {
@@ -683,7 +681,7 @@ html {
 }
 
 /******************************** End Style of Footer ********************************/
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .portfolio {
         padding: 20px 0;
     }
